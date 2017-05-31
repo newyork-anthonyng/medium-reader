@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`verifyMediumLink should prepend with https 1`] = `"https://medium.com"`;
+
+exports[`verifyMediumLink should work with malformed links 1`] = `"https://medium.com/foobar"`;
