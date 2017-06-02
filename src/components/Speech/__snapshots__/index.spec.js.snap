@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Speech should add new Utterance and clear out old ones when speaking 1`] = `
+Array [
+  Object {
+    "rate": 0.8,
+    "text": "Hello World",
+    "voice": Object {
+      "name": "Google US English",
+    },
+  },
+  Object {
+    "chunkLength": 120,
+  },
+  [Function],
+]
+`;
+
+exports[`Speech should render <select> and <options> correctly 1`] = `
+<Speech
+  onEnd={[Function]}
+>
+  <div>
+    <select
+      onChange={[Function]}
+      value="Google US English"
+    >
+      <option
+        value="Voice 1"
+      >
+        Voice 1
+      </option>
+      <option
+        value="Voice 2"
+      >
+        Voice 2
+      </option>
+      <option
+        value="Voice 3"
+      >
+        Voice 3
+      </option>
+      <option
+        value="Google US English"
+      >
+        Google US English
+      </option>
+    </select>
+  </div>
+</Speech>
+`;
+
+exports[`Speech should update <select> when changing options 1`] = `"Batman"`;
+
+exports[`Speech when mounting should create voicesMap when component mounts 1`] = `
+Object {
+  "Google US English": Object {
+    "name": "Google US English",
+  },
+  "Voice 1": Object {
+    "name": "Voice 1",
+  },
+  "Voice 2": Object {
+    "name": "Voice 2",
+  },
+  "Voice 3": Object {
+    "name": "Voice 3",
+  },
+}
+`;
+
+exports[`Speech when mounting should set default voice when SpeechSynthesis voices loads 1`] = `
+Object {
+  "selectedVoice": "Google US English",
+  "voices": Array [
+    Object {
+      "name": "Voice 1",
+    },
+    Object {
+      "name": "Voice 2",
+    },
+    Object {
+      "name": "Voice 3",
+    },
+    Object {
+      "name": "Google US English",
+    },
+  ],
+}
+`;
