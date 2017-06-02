@@ -1,5 +1,5 @@
 /* global describe, it, expect */
-const myModule = require('./utility')
+const myModule = require('./server')
 const {
   verifyMediumLink
 } = myModule

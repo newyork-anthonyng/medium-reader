@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getMediumText should call correct link 1`] = `"http://localhost:3000/medium?mediumLink=someMediumLink.com"`;
+
+exports[`getMediumText should return correct response information 1`] = `"This is some text from medium.com"`;

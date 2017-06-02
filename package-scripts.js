@@ -21,7 +21,7 @@ module.exports = {
 
     test: {
       default: {
-        script: 'jest --watch',
+        script: 'jest --watch --silent',
         description: 'Run jest in watch mode'
       }
     },

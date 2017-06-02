@@ -9,7 +9,7 @@ const cors = require('cors')
 const axios = require('axios')
 const cheerio = require('cheerio')
 
-const { verifyMediumLink } = require('./src/utility/utility.js')
+const { verifyMediumLink } = require('./src/utility/server.js')
 
 app.use(cors())
 app.use(express.static('dist'))
