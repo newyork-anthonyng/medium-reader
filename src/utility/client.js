@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const ROOT_URL = process.env.PORT || 'http://localhost:3000'
+const ROOT_URL = ''
 
 const getMediumText = (mediumLink) => {
   return axios.get(`${ROOT_URL}/medium?mediumLink=${mediumLink}`)
