@@ -1,8 +1,10 @@
+const path = require('path')
+
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: __dirname + '/dist',
-    filename: 'bundle.js',
+    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
@@ -12,9 +14,9 @@ module.exports = {
         loader: 'babel-loader',
         include: __dirname,
         query: {
-          presets: ['es2015', 'react'],
-        },
+          presets: ['es2015', 'react']
+        }
       }
-    ],
-  },
-};
+    ]
+  }
+}

@@ -1,10 +1,10 @@
-function verifyMediumLink(link) {
-  const index = link.indexOf('medium');
-  const mediumLink = link.slice(index);
+function verifyMediumLink (link) {
+  const index = link.indexOf('medium')
+  const mediumLink = link.slice(index)
 
-  return `https://${mediumLink}`;
+  return `https://${mediumLink}`
 }
 
 module.exports = {
-  verifyMediumLink,
-};
+  verifyMediumLink
+}

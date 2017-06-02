@@ -1,24 +1,25 @@
-const myModule = require('./utility');
+/* global describe, it, expect */
+const myModule = require('./utility')
 const {
-  verifyMediumLink,
-} = myModule;
+  verifyMediumLink
+} = myModule
 
 describe('verifyMediumLink', () => {
   it('should return link if valid', () => {
-    const link = 'https://medium.com';
+    const link = 'https://medium.com'
 
-    expect(verifyMediumLink(link)).toEqual(link);
-  });
+    expect(verifyMediumLink(link)).toEqual(link)
+  })
 
   it('should prepend with https', () => {
-    const invalidLink = 'medium.com';
+    const invalidLink = 'medium.com'
 
-    expect(verifyMediumLink(invalidLink)).toMatchSnapshot();
-  });
+    expect(verifyMediumLink(invalidLink)).toMatchSnapshot()
+  })
 
   it('should work with malformed links', () => {
-    const invalidLink = 'uhohsomethinghappenedmedium.com/foobar';
+    const invalidLink = 'uhohsomethinghappenedmedium.com/foobar'
 
-    expect(verifyMediumLink(invalidLink)).toMatchSnapshot();
-  });
-});
+    expect(verifyMediumLink(invalidLink)).toMatchSnapshot()
+  })
+})
