@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleContent should render correctly when loading 1`] = `
+<h1>
+  Fetching medium content
+</h1>
+`;
+
+exports[`ArticleContent should render correctly when not loading and no text 1`] = `null`;
+
+exports[`ArticleContent should render correctly when there is text 1`] = `
+<p>
+  This is my awesome article
+</p>
+`;
